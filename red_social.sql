@@ -49,7 +49,7 @@ CREATE TABLE comentario_publicacion(
    FOREIGN KEY (id_comentario) REFERENCES comentario (id_comentario) ON DELETE CASCADE
 );
 
-IINSERT INTO usuario (nombre,biografia,genero,email) VALUES 
+INSERT INTO usuario (nombre,biografia,genero,email) VALUES 
 ('CRISTIAN','SOY COLOMBIANO','HOMBRE','CRISTIANP4LT4@GMAIL.COM'),
 ('FELIPE','SOY ARGENTINO','HOMBRE','FELIPE@GMAIL.COM'),
 ('DANIELA','SOY BOLIVIANA','MUJER','DANIELA123@GMAIL.COM'),
@@ -90,3 +90,16 @@ INSERT INTO comentario_publicacion (id_publicacion,id_comentario) VALUES
 (3,2),
 (4,1),
 (5,1);
+
+UPDATE usuario SET email = 'cafa@gmail.com' WHERE id_usuario = 1;
+UPDATE usuario SET email = 'cro345@gmail.com' WHERE id_usuario = 2;
+UPDATE usuario SET email = 'duki013@gmail.com' WHERE id_usuario = 3;
+UPDATE usuario SET email = 'fjfo145@gmail.com' WHERE id_usuario = 4;
+UPDATE usuario SET email = 'cooi453@gmail.com' WHERE id_usuario = 5;
+
+DELETE FROM publicacion WHERE id_publicacion = 1;
+DELETE FROM publicacion WHERE id_publicacion = 2;
+DELETE FROM publicacion WHERE id_publicacion = 3;
+DELETE FROM publicacion WHERE id_publicacion = 4;
+DELETE FROM publicacion WHERE id_publicacion = 5;
+
